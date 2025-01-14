@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  /* color: #fff; */
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.btn {
+  padding: 20px 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+}
+.rev {
+  border: 1.5px dotted black;
+  width: 40%;
+  padding: 20px 10px;
+  margin-top: 10px;
+  border-radius: 10%;
+}
+button {
+  color: coral;
+}
+button:hover,
+.reserve button:hover {
+  background-color: coral;
+  color: #fff;
+}
+.bg-dark {
+  background-color: #333;
+  color: #fff;
+}
+.bg-light {
+  color: coral;
+  background-color: #fff;
+}
+
+.page-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+.page-wrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.page-wrap .page {
+  position: absolute;
+}
+.page-container .page.first {
+  background: url("../image/pexels-marta-dzedyshko-1042863-2067619.jpg")
+    no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  /* transition: 10s ease-in 5s; */
+}
+.page-container .page.second {
+  background: url("../image/pexels-marta-dzedyshko-1042863-2067628.jpg")
+    no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  /* transition: 10s ease-in 5s; */
+}
+
+.page-container .nav-bar {
+  position: absolute;
+  top: 5%;
+  left: 15%;
+}
+.nav-bar .fixed {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  text-align: center;
+  position: fixed;
+}
+.page-container .nav-bar ul {
+  display: flex;
+  text-align: center;
+}
+
+.page-container .nav-bar ul a:hover {
+  background-color: #333;
+  color: #fdfdfddc;
+  border: none;
+  border-radius: 20px;
+  height: 10px;
+}
+.page-container .nav-bar ul a {
+  padding: 0.5rem 1rem;
+  margin: 5px;
+  background-color: rgba(219, 101, 13, 0.8);
+  border: none;
+  border-radius: 20px;
+  color: rgb(245, 235, 232);
+}
+.page-container .nav-bar h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: #fff;
+}
+.bright {
+  margin: auto;
+  display: flex;
+}
+.nav-bar .bright .sun {
+  display: none;
+}
+.nav-bar.active .bright .sun {
+  display: block;
+}
+.nav-bar.active .bright .moon {
+  display: none;
+}
+.nav-bar .bright .moon {
+  display: block;
+}
+.container-wrap {
+  position: relative;
+}
+.page-container .first .content {
+  text-align: center;
+  max-width: 768px;
+  padding: 20px;
+  position: absolute;
+  top: 60%;
+  left: 0%;
+}
+.content {
+  text-align: center;
+  max-width: 768px;
+  padding: 20px;
+  position: absolute;
+  top: 60%;
+  left: 0;
+}
+
+.content .container-wrap h1 {
+  color: rgb(252, 252, 252);
+  padding: 20px;
+  position: absolute;
+  top: -40%;
+  left: 10%;
+}
+.page-container .first .content p {
+  line-height: 1.8rem;
+  font-family: "Courier New", Courier, monospace;
+}
+.page-container .page .content p {
+  line-height: 1.8rem;
+  font-family: "Courier New", Courier, monospace;
+}
+.page-container .icon {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  padding: 5px 10px;
+  border-radius: 50%;
+  border: none;
+}
+.first-info {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+}
+.sec h1 {
+  margin: 20px;
+  text-align: center;
+  padding: 5px;
+}
+h1 {
+  color: coral;
+  font-family: "Times New Roman", Times, serif;
+}
+h2 {
+  padding: 20px;
+  color: coral;
+  text-align: center;
+}
+.first-info .info-box {
+  text-align: center;
+  height: 30vh;
+  border: 1px solid;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.about-secflex {
+  display: flex;
+  border: 1.5px solid coral;
+  max-width: 1000px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 80%;
+  padding-bottom: 10rem;
+}
+.about-sec {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+}
+.about-sec h1 {
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  padding-top: 10px;
+}
+.about-sec .about-info {
+  width: 50%;
+  height: 50%;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+}
+.about-sec .about-image {
+  width: 50%;
+  padding: 20px;
+  height: 50%;
+}
+.about-sec .about-image img {
+  width: 70%;
+  height: 50vh;
+  border-radius: 40%;
+}
+.about-sec .about-image h1 {
+  position: absolute;
+  text-align: center;
+}
+.reserve-wall {
+  height: 90vh;
+  display: block;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.reserve {
+  background: url("../image/pexels-wildlittlethingsphoto-1015568.jpg") no-repeat
+    center center/cover;
+  max-width: 1100px;
+  border-radius: 40px;
+  height: 80vh;
+  display: block;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  line-height: 0;
+}
+.reserve form {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+}
+.reserve form input {
+  margin: 20px;
+  height: 50px;
+  background-color: bisque;
+  padding: 10px;
+  opacity: 0.6;
+  border: 1px solid#ffff;
+  margin-bottom: 10px;
+}
+.reserve h1 {
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  color: coral;
+  text-align: center;
+  /* margin: 2rem; */
+  padding: 2rem;
+}
+.reserve p {
+  color: #fff;
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+}
+.reserve button {
+  color: #ffff;
+  background-color: transparent;
+  opacity: 0.8;
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 10px;
+  display: block;
+  margin: auto;
+}
+footer {
+  height: 50vh;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+.foot-wrap {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+.foot-wrap .foot-box {
+  text-align: center;
+  padding: 20px;
+  line-height: 1.5rem;
+}
+.foot-wrap .foot-box p {
+  padding: 10px;
+}

@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@keyframes backpip {
+  from {
+    background: url("../image/pexels-quang-nguyen-vinh-222549-2159065.jpg")
+      no-repeat center center/cover;
+  }
+  to {
+    background: url("../image/pexels-vlasceanu-1438445.jpg") no-repeat center
+      center/cover;
+  }
+}
+h1 {
+  color: coral;
+}
+.bg-blue {
+  background-color: rgb(227, 236, 240);
+  color: black;
+}
+a {
+  /* color: #fff; */
+  text-decoration: none;
+}
+small {
+  color: coral;
+}
+li {
+  list-style: none;
+}
+button {
+  color: coral;
+}
+.bg-dark {
+  background-color: #333;
+  color: #fff;
+}
+.bg-light {
+  color: coral;
+  background-color: #fff;
+}
+.page-container {
+  background: url("../image/pexels-quang-nguyen-vinh-222549-2159065.jpg")
+    no-repeat center center/cover;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  animation: backpip 10s ease-in-out 2s both;
+}
+.page-container .nav-bar {
+  padding: 2rem;
+  text-align: center;
+}
+.nav-bar .fixed {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  text-align: center;
+  position: fixed;
+}
+.page-container .nav-bar ul {
+  display: flex;
+  text-align: center;
+}
+.page-container .nav-bar ul a:hover {
+  background-color: #333;
+  color: #fdfdfddc;
+  border: none;
+  border-radius: 20;
+  height: 10px;
+}
+.page-container .nav-bar ul a {
+  padding: 0.5rem 1rem;
+  margin: 5px;
+  background-color: rgba(219, 101, 13, 0.8);
+  border: none;
+  border-radius: 20px;
+  color: rgb(245, 235, 232);
+}
+.page-container .nav-bar h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  color: #fff;
+}
+.bright {
+  margin: auto;
+  display: flex;
+}
+.nav-bar .bright .sun {
+  display: none;
+}
+.nav-bar.active .bright .sun {
+  display: block;
+}
+.nav-bar.active .bright .moon {
+  display: none;
+}
+.nav-bar .bright .moon {
+  display: block;
+}
+.page-container .about-h1 {
+  display: block;
+  align-items: center;
+  padding-top: 30px;
+  margin: auto;
+  padding-top: 18rem;
+  font-size: 2rem;
+  color: coral;
+}
+.about-first {
+  display: flex;
+  height: 80vh;
+  margin: auto;
+  padding: 20px;
+}
+.about-first .first-img {
+  display: flex;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  padding-right: 2rem;
+}
+.about-first .first-img img {
+  width: 50%;
+  height: 100%;
+  border-radius: 5%;
+}
+.about-first .first-img h1 {
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+  font-style: oblique;
+}
+.about-first .first-content {
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  line-height: 1.5rem;
+  padding-top: 100px;
+  max-width: 500px;
+  margin: auto;
+}
+.about-first .first-content h1 {
+  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  padding: 10px;
+}
+.feedback {
+  height: 50vh;
+}
+.feedback .feedback-box {
+  margin: auto;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid coral;
+  border-radius: 40%;
+  margin-bottom: 10px;
+}
+.feedback .feedback-box img {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  padding: 10px;
+}
+.feedback .trans {
+  transform: translateX(400%);
+  display: none;
+}
+.feedback.active .trans {
+  transform: translateX(0);
+  display: flex;
+}
+.feedback.active .main {
+  transform: translateX(400%);
+  display: none;
+}
+.about-content {
+  text-align: center;
+  height: 50vh;
+  display: block;
+}
+.about-content .content {
+  max-width: 900px;
+  margin: auto;
+  display: block;
+  line-height: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+  font-style: oblique;
+  padding-top: 5rem;
+  border: 1px solid coral;
+  border-radius: 20px;
+  padding: 10px;
+}
+footer {
+  height: 50vh;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+.foot-wrap {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+.foot-wrap .foot-box {
+  text-align: center;
+  padding: 20px;
+  line-height: 1.5rem;
+}
+.foot-wrap .foot-box p {
+  padding: 10px;
+}
