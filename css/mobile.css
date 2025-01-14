@@ -45,7 +45,6 @@ header.page-container .first .content h1 {
   padding: 2rem;
 }
 .first-info {
-  color: #ffff;
   display: grid;
   grid-template-columns: repeat(2, 3fr);
   max-width: 300px;
