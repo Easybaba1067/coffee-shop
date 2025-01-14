@@ -153,6 +153,7 @@ button:hover,
   margin: auto;
   padding: 20px;
   width: 50%;
+  position: relative;
 }
 .reservation-form .reserve form input {
   margin: 20px;
@@ -176,16 +177,21 @@ button:hover,
   text-align: center;
   margin: auto;
 }
-.reservation-form .reserve button {
-  background: transparent;
+.reservation-form .reserve .button {
   color: #ffff;
-  background-color: transparent;
+  background-color: rgba(219, 101, 13, 0.8);
   opacity: 0.8;
   text-align: center;
   border: 1px solid #fff;
   padding: 10px;
-  display: block;
-  margin: auto;
+  position: absolute;
+  top: 95%;
+  left: 35%;
+}
+.reservation-form .reserve .button:hover {
+  background-color: #333;
+  color: #fdfdfddc;
+  border: none;
 }
 .section-info {
   height: 80vh;

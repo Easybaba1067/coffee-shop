@@ -56,6 +56,7 @@ button:hover,
 .page-wrap .page {
   position: absolute;
 }
+
 .page-container .page.first {
   background: url("../image/pexels-marta-dzedyshko-1042863-2067619.jpg")
     no-repeat center center/cover;
@@ -155,7 +156,7 @@ button:hover,
   top: -40%;
   left: 10%;
 }
-.page-container .first .content p {
+.content .container-wrap h1 .page-container .first .content p {
   line-height: 1.8rem;
   font-family: "Courier New", Courier, monospace;
 }
@@ -263,7 +264,7 @@ h2 {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  line-height: 0;
+  line-height: 1rem;
 }
 .reserve form {
   display: grid;
@@ -271,6 +272,7 @@ h2 {
   margin: auto;
   padding: 20px;
   width: 50%;
+  position: relative;
 }
 .reserve form input {
   margin: 20px;
@@ -295,15 +297,16 @@ h2 {
   text-align: center;
   margin: auto;
 }
-.reserve button {
+.reserve .button {
   color: #ffff;
   background-color: transparent;
   opacity: 0.8;
   text-align: center;
   border: 1px solid #fff;
   padding: 10px;
-  display: block;
-  margin: auto;
+  position: absolute;
+  top: 95%;
+  left: 35%;
 }
 footer {
   height: 50vh;

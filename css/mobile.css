@@ -27,13 +27,16 @@ header.page-container .nav-bar .fixed .bright {
   display: none;
 }
 header.page-container .first .content {
-  top: 25%;
+  top: 35%;
   left: -5%;
   line-height: 3rem;
   text-align: center;
 }
+header.page-container .first .content p {
+  font-size: 0.7rem;
+}
 header.page-container .first .content h1 {
-  top: -25%;
+  top: -35%;
   color: coral;
 }
 .page.second {
@@ -51,6 +54,7 @@ header.page-container .first .content h1 {
   text-align: center;
   margin: auto;
 }
+
 .icon {
   display: none;
 }
@@ -66,11 +70,12 @@ h2 {
   text-align: center;
   font-size: 1rem;
 }
-.first-info .info-box {
+.sec .first-info .info-box {
   text-align: center;
   height: 40vh;
   border: 1px solid;
   border-radius: 5px;
+  font-size: 0.8rem;
 }
 
 .about-sec .about-image img {
@@ -82,29 +87,34 @@ h2 {
   padding: 20px;
   text-align: center;
   margin: auto;
+  font-size: 1rem;
 }
 .about-secflex {
   display: block;
   max-width: 500px;
 }
+.about-sec {
+  height: 80vh;
+}
 .about-sec .about-image h1 {
   display: none;
 }
 .reserve {
-  max-width: 350px;
-  height: 90vh;
+  max-width: 450px;
+  height: 80vh;
+  line-height: 0;
+  margin-bottom: 2rem;
 }
 .reserve form {
   display: block;
   margin: auto;
   padding: 5px;
   width: 50%;
-  margin-top: 2rem;
 }
 .reserve form input {
   margin: 10px;
   height: 100%;
-  /* margin-bottom: 10px; */
+  margin-bottom: 10px;
 }
 .reserve h1 {
   font-size: 1.5rem;
@@ -114,11 +124,16 @@ h2 {
 .reserve p {
   line-height: 1rem;
 }
+.reserve-wall .reserve .button {
+  height: 40px;
+  left: 20%;
+}
 .foot-wrap {
   display: block;
 }
 footer {
   height: 100vh;
+  margin-top: 10rem;
 }
 /* about css */
 .page-container .nav-bar {
@@ -188,10 +203,17 @@ footer {
   height: 100vh;
 }
 .reservation-form .reserve {
-  height: 90vh;
+  height: 100vh;
   max-width: 500px;
   padding: 2rem;
   text-align: center;
+}
+.reservation-form .reserve p {
+  padding: 2rem;
+  line-height: 1.2rem;
+}
+.reservation-form .reserve h1 {
+  line-height: 1.2rem;
 }
 .reservation-form .reserve form {
   display: block;
@@ -204,7 +226,11 @@ footer {
   height: 30px;
   margin-bottom: 10px;
 }
-.contact {
+section.reservation-form .reserve .button {
+  height: 40px;
+  left: 15%;
+}
+div.contact {
   display: block;
   height: 30vh;
   padding: 4rem;
@@ -221,9 +247,22 @@ footer {
 }
 /* menu */
 .menu-grid {
-  height: 200vh;
+  height: 160vh;
 }
-
+@media (min-width: 380px) {
+  .menu-grid {
+    height: 130vh;
+  }
+  .about-sec {
+    height: 60vh;
+  }
+  .reserve {
+    height: 60vh;
+  }
+  footer {
+    margin-top: -1rem;
+  }
+}
 .menu-grid .menu {
   display: block;
   margin: 10px;
@@ -236,8 +275,8 @@ footer {
 /* contact css */
 .contact {
   text-align: center;
-  padding: 20px;
-  height: 30vh;
+  padding: 10px;
+  height: 20vh;
   margin: auto;
   border-radius: 5%;
   margin-top: 20px;
