@@ -294,19 +294,18 @@ footer {
     right: 25%;
   }
   .reservation-form {
-    height: 45vh;
+    height: 50vh;
   }
 
   .reservation-form .reserve {
-    height: 100%;
-    margin: 1rem;
+    height: 500px;
   }
   .contact {
     height: 10vh;
     margin-top: 3rem;
   }
   .section-info {
-    height: 50vh;
+    height: 60vh;
   }
   .section-info .info-image img {
     height: 400px;

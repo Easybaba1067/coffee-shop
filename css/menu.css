@@ -119,14 +119,12 @@ button {
   display: none;
 }
 .menu-h1 {
-  position: absolute;
-  top: 50%;
-  left: 30%;
+  padding-top: 20%;
+  font-size: 1.5rem;
 }
 .menu-grid {
   height: 100vh;
   margin: auto;
-  margin: 1rem 0;
 }
 .menu-grid .menu {
   display: grid;
@@ -191,6 +189,15 @@ footer {
   body {
     overflow-x: hidden;
   }
+  .page-container {
+    height: 60vh;
+  }
+  .menu-grid {
+    height: 800px !important;
+  }
+  .menu-h1 {
+    padding-top: 50%;
+  }
   .ul-one {
     top: 5%;
     left: 1%;
@@ -206,6 +213,7 @@ footer {
   .page-container .nav-h1 {
     font-size: 1rem;
   }
+
   .bright {
     right: 25%;
   }
@@ -215,5 +223,10 @@ footer {
   }
   footer {
     height: 25vh;
+  }
+  .menu-grid {
+    height: 60vh;
+    max-width: 800px;
+    margin: auto;
   }
 }

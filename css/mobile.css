@@ -110,7 +110,7 @@ section.about-sec {
   display: none;
 }
 section.reserve-wall {
-  height: 500px;
+  height: 600px;
 }
 div.reserve {
   max-width: 450px;
@@ -208,17 +208,21 @@ footer {
   display: none;
 }
 .about-content {
-  height: 60vh;
+  height: 50vh;
+  width: 300px;
 }
-/* reservation */
+.about-content .content {
+  width: 300px;
+}
+/* reservation  css*/
 .reservation-form {
   height: 100vh;
 }
 .reservation-form .reserve {
-  height: 100vh;
   max-width: 500px;
   padding: 2rem;
   text-align: center;
+  height: 700px;
 }
 .reservation-form .reserve p {
   padding: 2rem;
@@ -248,20 +252,94 @@ div.contact {
   padding: 4rem;
 }
 .section-info {
-  height: 90vh;
+  height: 60vh;
 }
 .section-info .info {
-  width: 100%;
-  height: 80%;
+  width: 500px;
+  height: 500px;
 }
 .section-info .info-image {
   display: none;
 }
 /* menu */
+.menu-h1 {
+  font-size: 1rem;
+  padding-top: 60%;
+}
 .menu-grid {
-  height: 160vh;
+  height: 1300px !important;
+  width: 300px;
+}
+.menu-grid .menu {
+  display: block;
+  margin: 10px;
+  padding: 0.5rem;
+}
+.menu-grid .menu .menu-flex {
+  margin-left: 1rem;
+}
+/* contact css */
+.contact {
+  text-align: center;
+  padding: 10px;
+  height: 15vh;
+  margin: auto;
+  border-radius: 5%;
+  margin-top: 20px;
+}
+.contact h1 {
+  padding: 5px;
+  font-size: 1rem;
+  font-style: oblique;
+}
+.contact-input {
+  height: 50vh;
+  display: flex;
+}
+.contact-input .contact-box {
+  display: none;
+}
+.contact-input .input {
+  width: 100%;
+}
+.contact-input .input form .input-box input {
+  width: 100%;
+  height: 50px;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.contact-input .input form .input-box textarea {
+  width: 100%;
+  margin: 5px;
 }
 @media (min-width: 380px) {
+  .about-content {
+    height: 60vh;
+  }
+  .about-first {
+    height: 70vh;
+  }
+  .reservation-form {
+    height: 80vh;
+  }
+  div.contact {
+    height: 20vh;
+  }
+  .section-info .info {
+    width: 600px;
+    height: 450px;
+  }
+  .menu-grid {
+    height: 1400px !important;
+    width: 400px;
+  }
+  .contact {
+    height: 10vh;
+  }
+  .contact-input {
+    height: 60vh;
+  }
   .ul-one {
     top: 8%;
     left: 72%;
@@ -294,48 +372,4 @@ div.contact {
     top: 23%;
     right: -2%;
   }
-}
-.menu-grid .menu {
-  display: block;
-  margin: 10px;
-  /* margin: auto; */
-  padding: 0.5rem;
-}
-.menu-grid .menu .menu-flex {
-  margin-left: 1rem;
-}
-/* contact css */
-.contact {
-  text-align: center;
-  padding: 10px;
-  height: 20vh;
-  margin: auto;
-  border-radius: 5%;
-  margin-top: 20px;
-}
-.contact h1 {
-  padding: 5px;
-  font-size: 1rem;
-  font-style: oblique;
-}
-.contact-input {
-  height: 100vh;
-  display: flex;
-}
-.contact-input .contact-box {
-  display: none;
-}
-.contact-input .input {
-  width: 100%;
-}
-.contact-input .input form .input-box input {
-  width: 100%;
-  height: 50px;
-  margin: 5px;
-  border-radius: 10px;
-  padding: 10px;
-}
-.contact-input .input form .input-box textarea {
-  width: 100%;
-  margin: 5px;
 }

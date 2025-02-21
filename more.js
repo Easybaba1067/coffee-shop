@@ -1,3 +1,9 @@
+$(document).ready(function () {
+  $(".hamburger").click(() => {
+    $(".ul-one, .ul-two").slideToggle("slow");
+  });
+});
+
 const shifts = document.querySelectorAll(".shift");
 const buttons = document.querySelectorAll("button");
 const backs = document.querySelectorAll("section");
