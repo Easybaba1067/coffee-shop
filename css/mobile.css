@@ -3,29 +3,7 @@ header.page-container {
   width: 100%;
   overflow: hidden;
 }
-header.page-container .nav-bar {
-  display: flex;
-  height: 50vh;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: -5%;
-}
-header.page-container .nav-bar .fixed {
-  position: relative;
-}
-header.page-container .nav-bar ul a {
-  font-size: 0.6rem;
-}
-header.page-container .nav-bar .fixed .bright {
-  position: absolute;
-  top: 15%;
-  left: 5%;
-  font-size: 0.5rem;
-}
-.page-container .nav-bar h1 {
-  display: none;
-}
+
 header.page-container .first .content {
   top: 35%;
   left: -5%;
@@ -41,6 +19,38 @@ header.page-container .first .content h1 {
 }
 .page.second {
   display: none;
+}
+.page-container ul {
+  display: block;
+}
+.page-container ul li {
+  padding: 0.5rem;
+}
+.ul-one {
+  top: 10%;
+  left: 70%;
+  display: none;
+}
+.ul-two {
+  position: absolute;
+  top: 30%;
+  right: -2%;
+  display: none;
+}
+.nav-h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bright {
+  top: 1%;
+}
+.hamburger {
+  display: block;
+  right: 5%;
+  top: 2%;
+  background-color: #ffffffb9;
+  border-radius: 10px;
 }
 .about-h1 h1 {
   font-size: 2.2rem;
@@ -72,7 +82,7 @@ h2 {
 }
 .sec .first-info .info-box {
   text-align: center;
-  height: 40vh;
+  height: 200px;
   border: 1px solid;
   border-radius: 5px;
   font-size: 0.8rem;
@@ -93,15 +103,17 @@ h2 {
   display: block;
   max-width: 500px;
 }
-.about-sec {
-  height: 80vh;
+section.about-sec {
+  height: 600px;
 }
 .about-sec .about-image h1 {
   display: none;
 }
-.reserve {
+section.reserve-wall {
+  height: 500px;
+}
+div.reserve {
   max-width: 450px;
-  height: 80vh;
   line-height: 0;
   margin-bottom: 2rem;
 }
@@ -112,8 +124,8 @@ h2 {
   width: 50%;
 }
 .reserve form input {
+  height: 30px;
   margin: 10px;
-  height: 100%;
   margin-bottom: 10px;
 }
 .reserve h1 {
@@ -250,6 +262,13 @@ div.contact {
   height: 160vh;
 }
 @media (min-width: 380px) {
+  .ul-one {
+    top: 8%;
+    left: 72%;
+  }
+  .ul-two {
+    top: 23%;
+  }
   .menu-grid {
     height: 130vh;
   }
@@ -261,6 +280,19 @@ div.contact {
   }
   footer {
     margin-top: -1rem;
+  }
+  footer {
+    height: 80vh;
+  }
+}
+@media (max-width: 370px) {
+  .ul-one {
+    top: 8%;
+    left: 68%;
+  }
+  .ul-two {
+    top: 23%;
+    right: -2%;
   }
 }
 .menu-grid .menu {

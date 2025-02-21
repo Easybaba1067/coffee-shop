@@ -5,7 +5,6 @@
 }
 
 a {
-  /* color: #fff; */
   text-decoration: none;
 }
 li {
@@ -76,30 +75,19 @@ button:hover,
   /* transition: 10s ease-in 5s; */
 }
 
-.page-container .nav-bar {
-  position: absolute;
-  top: 5%;
-  left: 15%;
-}
-.nav-bar .fixed {
-  display: grid;
-  grid-template-columns: repeat(4, 2fr);
-  text-align: center;
-  position: fixed;
-}
-.page-container .nav-bar ul {
+.page-container ul {
   display: flex;
   text-align: center;
 }
 
-.page-container .nav-bar ul a:hover {
+.page-container ul a:hover {
   background-color: #333;
   color: #fdfdfddc;
   border: none;
   border-radius: 20px;
   height: 10px;
 }
-.page-container .nav-bar ul a {
+.page-container ul a {
   padding: 0.5rem 1rem;
   margin: 5px;
   background-color: rgba(219, 101, 13, 0.8);
@@ -107,27 +95,50 @@ button:hover,
   border-radius: 20px;
   color: rgb(245, 235, 232);
 }
-.page-container .nav-bar h1 {
-  font-size: 2rem;
+.page-container .nav-h1 {
+  font-size: 1.5rem;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
   color: #fff;
 }
+.ul-one {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+.ul-two {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.nav-h1 {
+  position: absolute;
+  top: 5%;
+  left: 40%;
+}
 .bright {
   margin: auto;
   display: flex;
+  position: absolute;
+  top: 5%;
+  right: 20%;
 }
-.nav-bar .bright .sun {
+.bright .sun {
   display: none;
 }
-.nav-bar.active .bright .sun {
-  display: block;
+.bright.active .sun {
+  display: flex;
 }
-.nav-bar.active .bright .moon {
+.bright.active .moon {
   display: none;
 }
-.nav-bar .bright .moon {
-  display: block;
+.bright .moon {
+  display: flex;
+}
+.hamburger {
+  position: absolute;
+  top: 0;
+  display: none;
 }
 .container-wrap {
   position: relative;
@@ -209,13 +220,12 @@ h2 {
   justify-content: center;
   margin: auto;
   height: 80%;
-  padding-bottom: 10rem;
 }
 .about-sec {
   height: 100vh;
   width: 100%;
   text-align: center;
-  margin-top: 20px;
+  margin: 20px;
   position: relative;
 }
 .about-sec h1 {
@@ -236,8 +246,8 @@ h2 {
   height: 50%;
 }
 .about-sec .about-image img {
-  width: 70%;
-  height: 50vh;
+  width: 300px;
+  height: 300px;
   border-radius: 40%;
 }
 .about-sec .about-image h1 {
@@ -245,6 +255,10 @@ h2 {
   text-align: center;
 }
 .reserve-wall {
+  background: url("../image/pexels-wildlittlethingsphoto-1015568.jpg") no-repeat
+    center center/cover;
+  max-width: 1100px;
+  border-radius: 40px;
   height: 90vh;
   display: block;
   margin: auto;
@@ -254,11 +268,6 @@ h2 {
 }
 
 .reserve {
-  background: url("../image/pexels-wildlittlethingsphoto-1015568.jpg") no-repeat
-    center center/cover;
-  max-width: 1100px;
-  border-radius: 40px;
-  height: 80vh;
   display: block;
   margin: auto;
   align-items: center;
@@ -328,4 +337,51 @@ footer {
 }
 .foot-wrap .foot-box p {
   padding: 10px;
+}
+@media (max-width: 1040px) {
+  body {
+    overflow-x: hidden;
+  }
+  .ul-one {
+    top: 5%;
+    left: 1%;
+  }
+  .ul-two {
+    top: 5%;
+    right: 1%;
+  }
+  .nav-h1 {
+    top: 5%;
+    left: 40%;
+  }
+  .page-container .nav-h1 {
+    font-size: 1rem;
+  }
+  .bright {
+    right: 25%;
+  }
+  .about-sec .about-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 40%;
+  }
+  .about-sec {
+    height: 800px;
+  }
+  .reserve-wall {
+    height: 60vh;
+  }
+  .reserve {
+    height: 100%;
+  }
+  footer {
+    height: 25vh;
+  }
+  .first-info .info-box {
+    height: 200px;
+  }
+  .reserve-wall {
+    height: 50vh;
+    padding: 1rem;
+  }
 }

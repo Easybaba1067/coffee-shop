@@ -1,3 +1,8 @@
+$(document).ready(function () {
+  $(".hamburger").click(() => {
+    $(".ul-one, .ul-two").slideToggle("slow");
+  });
+});
 const icon = document.querySelector(".icon");
 const pages = document.querySelectorAll(".page");
 const shift = document.querySelector(".shift");
@@ -5,8 +10,8 @@ const buttons = document.querySelectorAll("button");
 const backs = document.querySelectorAll("section");
 const aI = document.querySelectorAll(".about-icon");
 const feedback = document.querySelector(".feedback");
-const nav = document.querySelector(".nav-bar");
-
+const bright = document.querySelector(".bright");
+const nav = document.querySelectorAll(".nav");
 let pLen = pages.length;
 function slideMove(clickSlide) {
   pages.forEach((page, i) => {
@@ -23,13 +28,14 @@ function iconClick() {
       clickSlide++;
     }
     slideMove(clickSlide);
+    setInterval(slideMove, 3000);
   });
 }
 iconClick();
 
 function background() {
   shift.addEventListener("click", () => {
-    nav.classList.toggle("active");
+    bright.classList.toggle("active");
 
     buttons.forEach((button) => {
       button.classList.toggle("bg-dark");

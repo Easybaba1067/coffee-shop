@@ -62,30 +62,19 @@ button {
   text-align: center;
   animation: backpip 10s ease-in-out 2s both;
 }
-.page-container .nav-bar {
-  padding: 2rem;
-  text-align: center;
-  position: fixed;
-}
-.nav-bar .fixed {
-  display: grid;
-  grid-template-columns: repeat(4, 2fr);
-  text-align: center;
-  position: fixed;
-}
-.page-container .nav-bar ul {
+.page-container ul {
   display: flex;
   text-align: center;
 }
 
-.page-container .nav-bar ul a:hover {
+.page-container ul a:hover {
   background-color: #333;
   color: #fdfdfddc;
   border: none;
   border-radius: 20px;
   height: 10px;
 }
-.page-container .nav-bar ul a {
+.page-container ul a {
   padding: 0.5rem 1rem;
   margin: 5px;
   background-color: rgba(219, 101, 13, 0.8);
@@ -93,28 +82,50 @@ button {
   border-radius: 20px;
   color: rgb(245, 235, 232);
 }
-.page-container .nav-bar h1 {
-  font-size: 2rem;
+.page-container .nav-h1 {
+  font-size: 1.5rem;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
-  text-align: center;
   color: #fff;
+}
+.ul-one {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+.ul-two {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.nav-h1 {
+  position: absolute;
+  top: 5%;
+  left: 40%;
 }
 .bright {
   margin: auto;
   display: flex;
+  position: absolute;
+  top: 5%;
+  right: 20%;
 }
-.nav-bar .bright .sun {
+.bright .sun {
   display: none;
 }
-.nav-bar.active .bright .sun {
-  display: block;
+.bright.active .sun {
+  display: flex;
 }
-.nav-bar.active .bright .moon {
+.bright.active .moon {
   display: none;
 }
-.nav-bar .bright .moon {
-  display: block;
+.bright .moon {
+  display: flex;
+}
+.hamburger {
+  position: absolute;
+  top: 0;
+  display: none;
 }
 .page-container .about-h1 {
   display: block;
@@ -128,7 +139,7 @@ button {
 .contact {
   text-align: center;
   padding: 20px;
-  height: 50vh;
+  height: 10vh;
 }
 .contact h1 {
   padding: 10px;
@@ -136,10 +147,9 @@ button {
   font-style: oblique;
 }
 .contact-input {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   margin: 20px 0;
-  border-radius: 20px;
 }
 .contact-input .input {
   width: 50%;
@@ -181,7 +191,6 @@ button {
 }
 .contact-input .contact-box .po-box {
   width: 50%;
-  height: 100%;
   padding: 2rem;
 }
 .contact-input .contact-box .contact-link .contact-soc {
@@ -191,7 +200,6 @@ button {
 }
 .contact-input .contact-box .contact-link {
   width: 50%;
-  height: 100%;
   padding: 2rem;
 }
 .contact-input .contact-box .contact-soc li {
@@ -217,4 +225,36 @@ footer {
 }
 .foot-wrap .foot-box p {
   padding: 10px;
+}
+@media (max-width: 1040px) {
+  body {
+    overflow-x: hidden;
+  }
+  .ul-one {
+    top: 5%;
+    left: 1%;
+  }
+  .ul-two {
+    top: 5%;
+    right: 1%;
+  }
+  .nav-h1 {
+    top: 5%;
+    left: 40%;
+  }
+  .page-container .nav-h1 {
+    font-size: 1rem;
+  }
+  .bright {
+    right: 25%;
+  }
+  .contact {
+    height: 10px;
+  }
+  .contact-input {
+    height: 50vh;
+  }
+  footer {
+    height: 25vh;
+  }
 }
